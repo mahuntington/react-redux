@@ -1,8 +1,7 @@
-import asdf, {myFunc2 as wee, Foo} from './mylib.js'
+import ReactDOM from 'react-dom';
+import React from 'react';
 
-var a = new Foo();
-
-a.bar();
-asdf();
-wee();
-console.log('awesome');
+ReactDOM.render(
+  <h1 className="foo">Hello, world!</h1>,
+  document.querySelector('main')
+);
