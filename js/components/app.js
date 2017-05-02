@@ -1,8 +1,12 @@
 import React from 'react';
+import CommentsList from './CommentsList.js';
 
 class App extends React.Component {
     render() {
-        return <h1>Hello!</h1>;
+        return <section>
+            <CommentsList/>
+            <p>Oh hai</p>
+        </section>
     }
 }
 
