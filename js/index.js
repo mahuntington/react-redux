@@ -1,8 +1,8 @@
 import ReactDOM from 'react-dom';
 import React from 'react';
-import Heading from './components/heading.js';
+import App from './components/app.js';
 
 ReactDOM.render(
-  <Heading title="Matt"/>,
+  <App/>,
   document.querySelector('main')
 );
