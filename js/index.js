@@ -1,5 +1,5 @@
-import asdf, {myFunc2} from './mylib.js'
+import asdf, {myFunc2 as wee} from './mylib.js'
 
 asdf();
-myFunc2();
+wee();
 console.log('awesome');
