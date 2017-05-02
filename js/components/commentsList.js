@@ -3,7 +3,9 @@ import React from 'react';
 class CommentsList extends React.Component {
     render() {
         return <ul>
-            <li>comments list</li>
+            {this.props.comments.map((comment, index) =>
+                <li key={index}>{comment.body}</li>
+            )}
         </ul>
     }
 }
