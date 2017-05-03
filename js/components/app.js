@@ -6,10 +6,6 @@ class App extends React.Component {
     constructor(props){
         super(props);
         this.addComment = this.addComment.bind(this);
-        this.state = {
-            comments: [
-            ]
-        }
     }
     addComment(value){
         this.state.comments.push({ body: value });
@@ -19,7 +15,7 @@ class App extends React.Component {
     }
     render() {
         return <section>
-            <CommentsList comments={this.state.comments}/>
+            <CommentsList/>
             <CommentsForm handleSubmit={this.addComment}/>
         </section>
     }
