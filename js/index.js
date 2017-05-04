@@ -28,6 +28,13 @@ import store from './store.js'
 //     });
 // });
 
+fetch('http://localhost:3000/comments').then(function(response){
+    response.json().then(function(data){
+        store.dispatch({type:'SET', comments:data});
+    });
+});
+
+
 ReactDOM.render(
     <Provider store={store}>
         <App/>
