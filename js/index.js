@@ -4,6 +4,7 @@ import App from './components/app.js';
 import { Provider } from 'react-redux'
 import store from './store.js'
 
+// fetch('http://localhost:3000/comments').then(function(response){
 // fetch('https://stupidcomments.herokuapp.com/comments').then(function(response){
 //     response.json().then(function(data){
 //         console.log(data);
@@ -11,6 +12,7 @@ import store from './store.js'
 // });
 
 // fetch(
+//     'http://localhost:3000/comments',
 //     'https://stupidcomments.herokuapp.com/comments',
 //     {
 //         headers: {
